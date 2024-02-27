@@ -1,0 +1,50 @@
+\begin{thebibliography}{1}
+
+\bibitem{web}
+Nordic Infocenter.
+\newblock nrf52840 datasheet.
+\newblock Nordic Infocenter,
+  \url{https://infocenter.nordicsemi.com/pdf/nRF52840_PS_v1.1.pdf}, Mayo 2019.
+\newblock Accedido en febrero de 2024.
+
+\bibitem{web2}
+Arduino Docs.
+\newblock Arduino nano 33 ble.
+\newblock Arduino Docs,
+  \url{https://docs.arduino.cc/resources/datasheets/ABX00030-datasheet.pdf},
+  Mayo 2019.
+\newblock Accedido en febrero de 2024.
+
+\bibitem{giroscopio}
+ST~life.augmented.
+\newblock 9-axis inemo inertial module (imu): 3d magnetometer, 3d
+  accelerometer, 3d gyroscope with i2c and spi.
+\newblock \url{https://www.st.com/en/mems-and-sensors/lsm9ds1.html#overview},
+  setiembre 2015.
+\newblock Accedido en febrero de 2024.
+
+\bibitem{web4}
+Arduino Docs.
+\newblock Tiny ml on arduino.
+\newblock Arduino,
+  \url{https://colab.research.google.com/github/arduino/ArduinoTensorFlowLiteTutorials/blob/master/GestureToEmoji/arduino_tinyml_workshop.ipynb#scrollTo=9J33uwpNtAku},
+  febrero 2024.
+\newblock Accedido en febrero de 2024.
+
+\bibitem{web3}
+Arduino Docs.
+\newblock Get started with machine learning on arduino.
+\newblock Arduino Docs,
+  \url{https://docs.arduino.cc/tutorials/nano-33-ble-sense/get-started-with-machine-learning/},
+  febrero 2024.
+\newblock Accedido en febrero de 2024.
+
+\bibitem{ArduinoSketches1}
+Arduino.
+\newblock Imu capture.
+\newblock Arduino,
+  \url{https://github.com/arduino/ArduinoTensorFlowLiteTutorials/tree/master/GestureToEmoji/ArduinoSketches/IMU_Capture},
+  Agosto 2020.
+\newblock Primer parte, captura de gestos.
+
+\end{thebibliography}

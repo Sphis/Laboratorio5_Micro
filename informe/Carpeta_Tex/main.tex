@@ -1,0 +1,102 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}%Para Tildes y ñ%
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{siunitx}
+\usepackage{adjustbox}
+%\usepackage{minted}
+\usepackage{listings}
+\lstset{
+  language=C,
+  basicstyle=\ttfamily,
+  keywordstyle=\color{red},
+  stringstyle=\color{orange},
+  commentstyle=\color{blue},
+  numbers=left,
+  numberstyle=\tiny\color{gray},
+  stepnumber=1,
+  frame=single,
+  breaklines=true,
+  breakatwhitespace=false,
+  tabsize=2,
+  captionpos=d
+  inputencoding=utf8/latin1,
+  keepspaces=true,
+  showstringspaces=false,
+  literate=%
+    {á}{{\'a}}1
+    {é}{{\'e}}1
+    {í}{{\'i}}1
+    {ó}{{\'o}}1
+    {ú}{{\'u}}1
+    {Á}{{\'A}}1
+    {É}{{\'E}}1
+    {Í}{{\'I}}1
+    {Ó}{{\'O}}1
+    {Ú}{{\'U}}1
+    {ñ}{{\~n}}1
+    {Ñ}{{\~N}}1
+}
+
+\usepackage[american]{circuitikz}
+\usepackage{tikz}
+\usepackage{graphicx} 
+\usepackage{pdfpages} %para importar paginas de un pdf 
+\usepackage{booktabs}
+\usepackage{multicol}
+\usepackage[bookmarks = true, colorlinks=true, linkcolor = black, citecolor = green, menucolor = black, urlcolor = black]{hyperref} 
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry} 
+\usepackage{multirow}
+\addto\captionsspanish{\renewcommand{\listtablename}{Índice de tablas}}		% Cambiar nombre a lista de tablas   
+\addto\captionsspanish{\renewcommand{\tablename}{Tabla}}					% Cambiar nombre a tablas
+\usepackage{float}		% Para ubicar las tablas y figuras justo después del texto
+\usepackage{pdfpages}
+\usepackage{enumerate}%listas y viñetas
+\author{Estudiantes:\\ Kevin Campos Castro\\ Josué Salmerón Córdoba  \\{\small Grupo 1}\\ Profesor:  Marco Villalta  \vspace*{3.0in}}
+\title{Universidad de Costa Rica\\{\small Facultad de Ingeniería\\Escuela de Ingeniería Eléctrica\\IE0624 – Laboratorio 5\\III ciclo 2023\\\vspace*{0.55in}}\\ STM32/Arduino: GPIO, Giroscopio, comunicaciones, TinyML. \vspace*{1.35in}}
+%\date{fecha de entrega} 
+
+\begin{document} 
+
+\maketitle  
+\thispagestyle{empty}%%no numerar la portada
+\renewcommand{\thepage}{\roman{page}}
+\newpage
+\tableofcontents
+\newpage
+\listoffigures 
+\newpage
+\listoftables  
+\newpage
+%%%%%%%%%%  
+\renewcommand{\thepage}{\arabic{page}} 
+\setcounter{page}{1}
+\begin{center}
+\section{Resumen}
+\end{center}
+En este trabajo se presenta una de muchas aplicaciones en TinyML que posee el microcontrolador Arduino Nano 33 Ble Sense, en este caso se trata de la detección de movimientos realizados con el brazo. Con ayuda del ejemplo de la librería de TensorFlowLite, en especial el \texttt{IMU\_Capture} se logró hacer uso del giroscopio y la acelaración de los movimientos para luego hacer un entrenamiento de los datos con el notebook de Colab disponible en \cite{web4} y con el ejemplo \texttt{IMU\_Classifier} la placa logra identificar mostrando la probabilidad más alta de alguno de los 3 movimientos realizados. Por tanto, este trabajo cumple satisfactoriamente con lo solicitado porque el arduino es capaz de identificar los movimientos una vez realizados.
+% AQUI VA EL RESUMEN 
+
+%\textbf{\textit{Palabras clave}} \\
+
+%palabras,clave,separadas, por,coma (solo en el reporte)
+   
+\newpage  
+
+
+%\input{1_Objetivos.tex}
+\input{2_Nota_te_rica.tex}
+
+\input{Desarrollo_Analisis.tex}
+\input{Conclusiones_recomendaciones.tex}
+
+\newpage 
+\input{6_Bibliografia.tex}
+
+ \input{Apendices.tex}
+\end{document}
+ 
+
+\end{document}

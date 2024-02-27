@@ -1,0 +1,9 @@
+\section{Conclusiones y recomendaciones}
+Las conclusiones para este trabajo son:
+\begin{itemize}
+\item Los ejemplos brindados fueron de gran ayuda para realizar las pruebas con el giroscopio.
+\item El notebook de Colab está muy bien hecho porque es rápido, lo cual tiene sentido al tratarse de Python, y realiza un muy buen entrenamiento de los datos porque a la hora de llevar el archivo \texttt{model.h} al código \texttt{IMU\_ Classifier}, resulta que que la placa es consistente cuando asigna una probabilidad al movimiento realizado previamente.
+\item Tensorflow lite es una herramienta muy poderosa porque permite hacer uso de técnicas de machine learning en dispositivos que no tienen un rendimiento tan alto.
+\item Por tanto, el programa cumple satisfactoriamente porque los movimientos realizados fueron hechos con la misma cantidad de muestras; 1750. Para el caso del puñetazo se hizo en una misma dirección hacia la pantalla de la PC. En cambio, los otros dos: movimiento circular se ejecutó en sentido horario y anti-horario, y el brazo hacia arriba se hizo en diferentes ejes. Además, el buen entrenamiento de los datos mencionado previamente ayudó mucho para identificar los movimientos realizados.
+\end{itemize}
+A modo de recomendación, prestar mucha atención en clases con \textbf{todo} lo que menciona el profesor, por supuesto estudiar muy bien los ejemplos recomendados por él así como la literatura. Lo otro muy importante es hacer los movimientos con diferentes ejes y así no tener un mismo patrón en un muestreo de 1750 muestras ya que no habrá diversidad para identificar el movimiento realizado.
